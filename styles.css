@@ -21,22 +21,28 @@ main{
     text-align: center;
 }
 img{
-    margin: 25px 100px 0px 0px;
+    width: 30%;
 }
 section{
     width: 290px;
-    height: 400px;
+    height: 500px;
 }
 .sedancard{
     background-color: hsl(31, 77%, 52%);
+    border-radius: 15px 0 0 15px;
 
 }
+p{
+    
+}
+
 .suvcard{
     background-color: hsl(184, 100%, 22%);
     
 }
 .luxurycard{
     background-color: hsl(179, 100%, 13%);
+    border-radius: 0 15px 15px 0;
     
 }
 
@@ -45,15 +51,61 @@ section{
     font-family: 'Big Shoulders Display', cursive;
     color: hsl(0, 0%, 95%);
     font-size: 35px;
+    margin: 28px 0;
 }
  p{
     font-family: 'Lexend Deca', sans-serif;
     color: hsla(0, 0%, 100%, 0.75);
-    text-align: justify;
+    margin-top: 2rem;
+    line-height: 1.7;
+    padding-right: 15px;
 }
- a{
+ button{
     font-family: 'Lexend Deca', sans-serif;
-    color: hsl(0, 0%, 95%);
+    color: black;
+    padding: 25px;
+    border: none;
+    mix-blend-mode: screen;
+    position: static;
+    bottom: 40px;
+    font-weight: bolder;
+    border-radius: 24px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 375px){
+    img{
+        float: left;
+    }
+
+    .container{
+        display: block;
+        grid-template-columns: 1fr 1fr 1fr;
+        border-radius: none;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+
+    }
 }
 
 
+
+@media screen and (min-width: 1440px) {
+    img{
+        width: 30%
+    }
+
+    .container{
+        display: grid;
+        grid-auto-flow: column;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 190px;
+        
+    }
+}
